@@ -1,8 +1,8 @@
 # Philip Atef Portfolio
 
-Personal portfolio page for presenting selected front-end projects with live demos, GitHub links, skills, and contact details.
+Personal portfolio page for presenting selected front-end projects with live websites, GitHub links, skills, and contact details.
 
-## Live Demo
+## Live Site
 
 - Portfolio: https://fleepatef42-sudo.github.io/portfolio/
 - GitHub: https://github.com/fleepatef42-sudo
@@ -27,4 +27,4 @@ Personal portfolio page for presenting selected front-end projects with live dem
 
 ## Notes
 
-The project links are live GitHub Pages demos. Each project is presented as a front-end portfolio demo with client-side interactions.
+The project links are live GitHub Pages websites. Each project focuses on responsive interfaces, practical interactions, and clear presentation.
