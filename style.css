@@ -25,6 +25,10 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: inherit;
+}
+
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
@@ -172,6 +176,8 @@ nav {
 .cta-buttons {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -183,6 +189,7 @@ nav {
     cursor: pointer;
     border: none;
     font-size: 1rem;
+    text-align: center;
 }
 
 .btn-primary {
@@ -225,7 +232,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
     gap: 30px;
 }
 
@@ -306,6 +313,7 @@ section {
     color: var(--text-dim);
     font-size: 0.95rem;
     margin-bottom: 20px;
+    min-height: 92px;
 }
 
 .project-footer {
@@ -320,13 +328,24 @@ section {
 }
 
 .project-links a {
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--glass-border);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.04);
     color: var(--text);
     font-size: 1.2rem;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .project-links a:hover {
     color: var(--primary);
+    border-color: var(--primary);
+    transform: translateY(-2px);
 }
 
 /* Skills Section */
@@ -346,6 +365,7 @@ section {
     align-items: center;
     gap: 10px;
     transition: 0.3s;
+    min-height: 52px;
 }
 
 .skill-badge:hover {
@@ -438,9 +458,88 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .contact-content { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 3.5rem; }
+    nav {
+        padding: 1rem 6%;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 120px 6% 70px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3rem, 16vw, 4.5rem);
+    }
+
+    .hero p {
+        max-width: 100%;
+    }
+
+    section {
+        padding: 80px 6%;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: clamp(2rem, 10vw, 3rem);
+    }
+
+    .project-img {
+        height: 190px;
+    }
+
+    .project-info p {
+        min-height: auto;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 460px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    nav .btn {
+        padding: 0.55rem 0.9rem !important;
+        font-size: 0.75rem !important;
+    }
+
+    .cta-buttons {
+        width: 100%;
+    }
+
+    .cta-buttons .btn {
+        flex: 1 1 100%;
+        padding: 0.9rem 1rem;
+    }
+
+    .project-info {
+        padding: 20px;
+    }
+
+    .skills-container {
+        gap: 12px;
+    }
+
+    .skill-badge {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Animations */
