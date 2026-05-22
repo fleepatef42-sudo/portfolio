@@ -17,6 +17,24 @@ window.addEventListener('scroll', reveal);
 // Initial check
 reveal();
 
+// Project filters
+const filterButtons = document.querySelectorAll('.filter-btn');
+const projectCards = document.querySelectorAll('.project-card');
+
+filterButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach((item) => item.classList.remove('active'));
+        button.classList.add('active');
+
+        projectCards.forEach((card) => {
+            const shouldShow = filter === 'all' || card.dataset.category === filter;
+            card.classList.toggle('is-hidden', !shouldShow);
+        });
+    });
+});
+
 // Form Submission via AJAX (Formspree)
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
