@@ -553,6 +553,49 @@ footer {
     }
 }
 
+/* Compact fixed header across small, large, and XL screens */
+@media (max-width: 640px) {
+    nav {
+        padding: 0.7rem 5%;
+    }
+
+    .logo {
+        font-size: 1.08rem;
+    }
+
+    nav .btn {
+        min-height: 36px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    nav {
+        padding: 1rem 5%;
+    }
+
+    .logo {
+        font-size: 1.32rem;
+    }
+
+    .nav-links {
+        gap: 1.4rem;
+    }
+
+    nav .btn {
+        padding: 0.55rem 1rem !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    nav {
+        padding: 1.05rem 6%;
+    }
+
+    .logo {
+        font-size: 1.38rem;
+    }
+}
+
 @media (max-width: 460px) {
     .logo {
         font-size: 1.2rem;
