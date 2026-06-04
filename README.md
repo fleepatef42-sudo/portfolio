@@ -1,30 +1,21 @@
-# Philip Atef Portfolio
+# Marea Table Restaurant
 
-Personal portfolio page for presenting selected front-end projects with live websites, GitHub links, skills, and contact details.
+Modern Mediterranean restaurant website with menu browsing, cart interactions, reservation form, login, and registration screens.
 
 ## Live Site
 
-- Portfolio: https://fleepatef42-sudo.github.io/portfolio/
-- GitHub: https://github.com/fleepatef42-sudo
-- LinkedIn: https://www.linkedin.com/in/fleep-atef
+- Restaurant: https://fleepatef42-sudo.github.io/portfolio/
 
-## Featured Projects
+## Pages
 
-- Marea Table
-- Smart University
-- Shifa Care Hospital
-- Noor Atelier
-- Fitness Supps Tracker
-- SkyPulse
+- Home and menu: `index.html`
+- Login: `login.html`
+- Register: `register.html`
 
 ## Tech Stack
 
 - HTML5
 - CSS3
 - JavaScript
-- Font Awesome
-- Formspree contact form
-
-## Notes
-
-The project links are live GitHub Pages websites. Each project focuses on responsive interfaces, practical interactions, and clear presentation.
+- LocalStorage
+- Lucide Icons

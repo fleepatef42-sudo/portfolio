@@ -1,277 +1,316 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip Atef | Front-End Developer</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap"
-        rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Styles -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marea Table | Modern Mediterranean Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Marea Table home" style="visibility: hidden; pointer-events: none;">
+        <span class="brand-mark">MT</span>
+      </a>
 
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#story">About</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-    <nav>
-        <div class="logo">Philip<span class="gradient-text">Atef</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <a href="#contact" class="btn btn-outline" style="padding: 0.6rem 1.2rem; font-size: 0.8rem;">Hire Me</a>
+      <div class="nav-right" id="navRight">
+        <a href="#menu" aria-label="Cart"><i data-lucide="shopping-bag"></i></a>
+        <a href="login.html" class="user-action" id="authLink"><i data-lucide="user"></i> <span id="authText">Login</span></a>
+      </div>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
     </nav>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <h1 data-reveal>Philip <span class="gradient-text">Atef</span></h1>
-            <p data-reveal>Computer Engineering student and Front-End Developer building responsive, interactive web
-                applications with clean UI, practical JavaScript logic, and polished user flows.</p>
-            <div class="cta-buttons" data-reveal>
-                <a href="#projects" class="btn btn-primary">Explore My Work</a>
-                <a href="#contact" class="btn btn-outline">Let's Collaborate</a>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <div class="section-header">
-                <h2 data-reveal>Selected <span class="gradient-text">Projects</span></h2>
-                <p data-reveal>Client-side applications built with HTML, CSS, JavaScript, responsive layouts, and local
-                    data flows.</p>
-            </div>
-
-            <div class="project-filters" data-reveal aria-label="Filter projects">
-                <button class="filter-btn active" type="button" data-filter="all">All</button>
-                <button class="filter-btn" type="button" data-filter="systems">Systems</button>
-                <button class="filter-btn" type="button" data-filter="food">Food</button>
-                <button class="filter-btn" type="button" data-filter="commerce">Commerce</button>
-                <button class="filter-btn" type="button" data-filter="lifestyle">Lifestyle</button>
-                <button class="filter-btn" type="button" data-filter="travel">Travel</button>
-            </div>
-
-            <div class="projects-grid">
-                <!-- Project 1: Restaurant -->
-                <div class="project-card" data-category="food" data-reveal>
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80" alt="Marea Table restaurant website">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Restaurant Website</span>
-                        <h3>Marea Table</h3>
-                        <p>A modern Mediterranean restaurant website with a full menu, live cart interactions,
-                            reservation form, account screens, and polished responsive dining sections.</p>
-                        <div class="project-footer">
-                            <div class="project-links">
-                                <a href="https://github.com/fleepatef42-sudo/portfolio/tree/main/restaurant-page" aria-label="Marea Table source files" title="GitHub source"><i class="fab fa-github"></i></a>
-                                <a href="https://fleepatef42-sudo.github.io/portfolio/restaurant-page/" aria-label="Marea Table live site" title="live site"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: University -->
-                <div class="project-card" data-category="systems" data-reveal>
-                    <div class="project-img">
-                        <img src="imag/Screenshot 2026-05-12 222312.png" alt="EduTrack">
-                        <i class="fas fa-university"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Management System</span>
-                        <h3>Smart University</h3>
-                        <p>A responsive university admin dashboard for students, courses, faculty, admissions, exams,
-                            library records, invoices, search, and modal forms.</p>
-                        <div class="project-footer">
-                            <div class="project-links">
-                                <a href="https://github.com/fleepatef42-sudo/-SMART-UNIVERSITY-" aria-label="Smart University GitHub repository" title="GitHub repository"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://fleepatef42-sudo.github.io/-SMART-UNIVERSITY-/" aria-label="Smart University live site" title="live site"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Hospital -->
-                <div class="project-card" data-category="systems" data-reveal>
-                    <div class="project-img">
-                        <img src="imag/Screenshot 2026-05-12 225419.png" alt="MedCare">
-                        <i class="fas fa-hospital-user"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Healthcare UI</span>
-                        <h3>Shifa-Care-Hospital</h3>
-                        <p>A hospital operations dashboard with sign-in, patient and doctor workflows,
-                            appointments, invoices, inventory, notifications, search, and theme control.</p>
-                        <div class="project-footer">
-                            <div class="project-links">
-                                <a href="https://github.com/fleepatef42-sudo/Shifa-Care-Hospital" aria-label="Shifa Care Hospital GitHub repository" title="GitHub repository"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://fleepatef42-sudo.github.io/Shifa-Care-Hospital/" aria-label="Shifa Care Hospital live site" title="live site"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: E-commerce -->
-                <div class="project-card" data-category="commerce" data-reveal>
-                    <div class="project-img">
-                        <img src="imag/Screenshot 2026-05-12 230504.png" alt="Fashion Hub">
-                        <i class="fas fa-shopping-bag"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">E-commerce UI</span>
-                        <h3>Noor Atelier</h3>
-                        <p>A fashion storefront with product filtering, search, quick view, cart interactions,
-                            newsletter handling, dark mode, and responsive Arabic UI.</p>
-                        <div class="project-footer">
-                            <div class="project-links">
-                                <a href="https://github.com/fleepatef42-sudo/fashion-store-Noor-Atelie" aria-label="Noor Atelier GitHub repository" title="GitHub repository"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://fleepatef42-sudo.github.io/fashion-store-Noor-Atelie/" aria-label="Noor Atelier live site" title="live site"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Fitness -->
-                <div class="project-card" data-category="lifestyle" data-reveal>
-                    <div class="project-img">
-                        <img src="imag/Screenshot 2026-05-13 211054.png" alt="Fitness Tracker">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Health & Fitness</span>
-                        <h3>Fitness Supps Tracker</h3>
-                        <p>A fitness dashboard for meal planning, supplement reminders, workout history, body metrics,
-                            local accounts, saved records, and canvas progress charts.</p>
-                        <div class="project-footer">
-                            <div class="project-links">
-                                <a href="https://github.com/fleepatef42-sudo/fitness-supps-tracker" aria-label="Fitness Supps Tracker GitHub repository" title="GitHub repository"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://fleepatef42-sudo.github.io/fitness-supps-tracker/" aria-label="Fitness Supps Tracker live site" title="live site"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: SkyPulse -->
-                <div class="project-card" data-category="travel" data-reveal>
-                    <div class="project-img">
-                        <img src="imag/Screenshot 2026-05-14 162622.png" alt="SkyPulse">
-                        <i class="fas fa-plane"></i>
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Flight Booking UX</span>
-                        <h3>SkyPulse</h3>
-                        <p>An Arabic-first flight booking experience with destination discovery, fare classes, search
-                            results, account modal, chat UI, and polished travel sections.</p>
-                        <div class="project-footer">
-                            <div class="project-links">
-                                <a href="https://github.com/fleepatef42-sudo/sky-pulse" aria-label="SkyPulse GitHub repository" title="GitHub repository"><i
-                                        class="fab fa-github"></i></a>
-                                <a href="https://fleepatef42-sudo.github.io/sky-pulse/" aria-label="SkyPulse live site" title="live site"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <div class="section-header">
-                <h2 data-reveal>Technical <span class="gradient-text">Skills</span></h2>
-                <p data-reveal>The stack and front-end practices used across the projects above.</p>
-            </div>
-            <div class="skills-container" data-reveal>
-                <div class="skill-badge"><i class="fab fa-html5" style="color: #e34c26;"></i> HTML5</div>
-                <div class="skill-badge"><i class="fab fa-css3-alt" style="color: #264de4;"></i> CSS3</div>
-                <div class="skill-badge"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</div>
-                <div class="skill-badge"><i class="fas fa-mobile-alt" style="color: #00f2ff;"></i> Responsive UI</div>
-                <div class="skill-badge"><i class="fas fa-database" style="color: #4db33d;"></i> LocalStorage</div>
-                <div class="skill-badge"><i class="fas fa-list-check" style="color: #ff00c8;"></i> Forms & Validation</div>
-                <div class="skill-badge"><i class="fab fa-git-alt" style="color: #f1502f;"></i> Git</div>
-                <div class="skill-badge"><i class="fab fa-github" style="color: #ffffff;"></i> GitHub Pages</div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="section-header">
-                <h2 data-reveal>Let's <span class="gradient-text">Connect</span></h2>
-                <p data-reveal>Have a project in mind? Let's build something amazing together.</p>
-            </div>
-
-            <div class="contact-content">
-                <div class="contact-info" data-reveal>
-                    <h3 style="margin-bottom: 20px;">Contact Information</h3>
-                    <p style="margin-bottom: 30px; color: var(--text-dim);">Feel free to reach out to me through any of
-                        these channels. I'm always open to discussing new projects, creative ideas, or opportunities to
-                        be part of your vision.</p>
-                    <div style="display: flex; flex-direction: column; gap: 20px;">
-                        <div style="display: flex; gap: 15px; align-items: center;">
-                            <i class="fas fa-envelope" style="color: var(--primary);"></i>
-                            <span>fleepatef@gmail.com</span>
-                        </div>
-                        <div style="display: flex; gap: 15px; align-items: center;">
-                            <i class="fas fa-location-dot" style="color: var(--primary);"></i>
-                            <span>Cairo, Egypt / Remote</span>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" action="https://formspree.io/f/xvzlqrjn" method="POST">
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Email Address</label>
-                        <input type="email" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea name="message" rows="5" placeholder="How can I help you?" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social-icons">
-            <a href="https://github.com/fleepatef42-sudo" aria-label="GitHub profile" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/fleep-atef" aria-label="LinkedIn profile" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:fleepatef@gmail.com" aria-label="Email Philip Atef" title="Email"><i class="fas fa-envelope"></i></a>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-media" role="img" aria-label="Elegant restaurant dining room with warm evening lighting"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Welcome to <span class="highlight">Marea</span></h1>
+        <p>Where culinary artistry meets unforgettable experiences</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#menu">
+            <span>Explore Menu</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="btn btn-ghost" href="#story">
+            <i data-lucide="play"></i>
+            <span>Watch Story</span>
+          </a>
         </div>
-        <p>&copy; 2026 Philip Atef. All Rights Reserved.</p>
-    </footer>
+      </div>
+      <div class="hero-strip" aria-label="Restaurant highlights">
+        <div>
+          <strong>24</strong>
+          <span>Signature dishes</span>
+        </div>
+        <div>
+          <strong>4.9</strong>
+          <span>Guest rating</span>
+        </div>
+        <div>
+          <strong>20+</strong>
+          <span>Years of craft</span>
+        </div>
+      </div>
+    </section>
 
-    <!-- Scripts -->
-    <script src="script.js"></script>
+    <section class="section intro-band" aria-label="Service highlights">
+      <div class="section-inner feature-grid">
+        <article class="feature-item">
+          <i data-lucide="chef-hat"></i>
+          <h3>Chef-Led Kitchen</h3>
+          <p>Seasonal menus shaped by classic technique and modern Mediterranean restraint.</p>
+        </article>
+        <article class="feature-item">
+          <i data-lucide="fish"></i>
+          <h3>Daily Market Produce</h3>
+          <p>Fresh seafood, herbs, vegetables, and pantry staples selected each morning.</p>
+        </article>
+        <article class="feature-item">
+          <i data-lucide="wine"></i>
+          <h3>Curated Pairings</h3>
+          <p>Thoughtful drinks and zero-proof options chosen to support every course.</p>
+        </article>
+        <article class="feature-item">
+          <i data-lucide="sparkles"></i>
+          <h3>Private Atmosphere</h3>
+          <p>Warm lighting, measured pacing, and tables arranged for comfortable evenings.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section menu-section" id="menu">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">Seasonal menu</span>
+          <h2>Chef's Selection</h2>
+          <p>A balanced edit of seafood, grilled plates, garden dishes, and desserts.</p>
+        </div>
+
+        <div class="menu-tools" aria-label="Menu controls">
+          <label class="search-box">
+            <i data-lucide="search"></i>
+            <input id="menuSearch" type="search" placeholder="Search dishes">
+          </label>
+          <div class="filter-tabs" id="filterTabs" aria-label="Menu categories">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="seafood">Seafood</button>
+            <button class="filter-btn" type="button" data-filter="meat">Meat</button>
+            <button class="filter-btn" type="button" data-filter="vegetarian">Vegetarian</button>
+            <button class="filter-btn" type="button" data-filter="dessert">Dessert</button>
+          </div>
+        </div>
+
+        <div class="menu-layout">
+          <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+          <aside class="order-panel" aria-label="Your order">
+            <div class="order-head">
+              <div>
+                <span class="eyebrow">Your order</span>
+                <h3>Dining Cart</h3>
+              </div>
+              <span class="order-count" id="orderCount">0</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+              <p class="empty-cart">Choose a few dishes to begin your order.</p>
+            </div>
+            <div class="order-summary">
+              <div>
+                <span>Subtotal</span>
+                <strong id="subtotal">$0.00</strong>
+              </div>
+              <div>
+                <span>Service</span>
+                <strong id="service">$0.00</strong>
+              </div>
+              <div class="total-row">
+                <span>Total</span>
+                <strong id="total">$0.00</strong>
+              </div>
+            </div>
+            <button class="checkout-btn" type="button" id="checkoutBtn">
+              <i data-lucide="shopping-bag"></i>
+              <span>Send Order</span>
+            </button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="section-inner story-grid">
+        <div class="story-copy">
+          <span class="eyebrow">Our story</span>
+          <h2>From a family table to a polished coastal dining room</h2>
+          <p>Marea Table began as a small kitchen built around family recipes, market ingredients, and the kind of hospitality that makes dinner feel unhurried.</p>
+          <p>Today, the restaurant brings together coastal flavors, precise technique, and a service rhythm designed for business dinners, anniversaries, and relaxed nights out.</p>
+          <div class="story-actions">
+            <a class="btn btn-primary" href="#reservation">
+              <span>Reserve an Experience</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="story-photo">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Elegant dinner table in a restaurant">
+          <div class="floating-note">
+            <strong>20+</strong>
+            <span>Years of hospitality</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="reviews">
+      <div class="section-inner">
+        <div class="section-heading">
+          <span class="eyebrow">Guest notes</span>
+          <h2>What Diners Remember</h2>
+        </div>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>The room feels calm and premium without trying too hard. The sea bass was beautifully cooked and the pacing was excellent.</p>
+            <div class="reviewer">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Portrait of Olivia Hart">
+              <div>
+                <strong>Olivia Hart</strong>
+                <span>Family dinner</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>The risotto and dessert were both precise, clean, and memorable. It is the kind of menu you can trust.</p>
+            <div class="reviewer">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Portrait of Marcus Lee">
+              <div>
+                <strong>Marcus Lee</strong>
+                <span>Business dinner</span>
+              </div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p>Every plate arrived hot, balanced, and beautifully presented. The service made the whole evening feel effortless.</p>
+            <div class="reviewer">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Portrait of Nadia Brooks">
+              <div>
+                <strong>Nadia Brooks</strong>
+                <span>Friends night out</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow">Visit us</span>
+          <h2>Location and Reservations</h2>
+          <div class="contact-list">
+            <div>
+              <i data-lucide="map-pin"></i>
+              <span>42 Nile Avenue, Zamalek, Cairo</span>
+            </div>
+            <div>
+              <i data-lucide="phone"></i>
+              <span>+20 100 246 8800</span>
+            </div>
+            <div>
+              <i data-lucide="clock"></i>
+              <span>Open daily, 1:00 PM - 12:00 AM</span>
+            </div>
+          </div>
+          <img class="contact-photo" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1000&q=80" alt="Restaurant exterior at night">
+        </div>
+
+        <form class="reservation-form" id="reservation">
+          <span class="eyebrow">Reserve a table</span>
+          <h3>Plan Your Visit</h3>
+          <div class="form-row">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" placeholder="+20 100 000 0000" required>
+            </label>
+          </div>
+          <div class="form-row">
+            <label>
+              Date
+              <input type="date" name="date" required>
+            </label>
+            <label>
+              Guests
+              <select name="guests" required>
+                <option value="2">2 guests</option>
+                <option value="4">4 guests</option>
+                <option value="6">6 guests</option>
+                <option value="8">8 guests</option>
+              </select>
+            </label>
+          </div>
+          <label>
+            Notes
+            <textarea name="notes" rows="4" placeholder="Occasion, seating preference, allergies, or timing notes"></textarea>
+          </label>
+          <button class="btn btn-primary form-submit" type="submit">
+            <span>Confirm Reservation</span>
+            <i data-lucide="check"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <p>&copy; 2026 Marea Table. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="#home" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#home" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="#home" aria-label="Email"><i data-lucide="mail"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="script.js"></script>
+  <script>
+    // Auth state check for main page
+    (function() {
+      const user = JSON.parse(localStorage.getItem('marea_current_user') || 'null');
+      const authLink = document.getElementById('authLink');
+      const authText = document.getElementById('authText');
+      if (user && authLink && authText) {
+        authText.textContent = user.firstName;
+        authLink.href = '#';
+        authLink.addEventListener('click', (e) => {
+          e.preventDefault();
+          if (confirm('Do you want to log out?')) {
+            localStorage.removeItem('marea_current_user');
+            location.reload();
+          }
+        });
+      }
+    })();
+  </script>
 </body>
-
 </html>
