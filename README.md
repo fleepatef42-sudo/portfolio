@@ -10,7 +10,7 @@ Personal portfolio page for presenting selected front-end projects with live web
 
 ## Featured Projects
 
-- Marea Table
+- StudyOS
 - Smart University
 - Shifa Care Hospital
 - Noor Atelier
