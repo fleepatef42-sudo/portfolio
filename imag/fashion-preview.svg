@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Noor Atelier fashion preview">
+  <image href="Screenshot%202026-05-12%20230504.png" x="0" y="0" width="1600" height="900" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1600" height="900" fill="rgba(250,246,238,.62)"/>
+  <rect x="215" y="275" width="1170" height="350" rx="34" fill="rgba(255,252,246,.94)"/>
+  <text x="800" y="390" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" fill="#1f2933">Noor <tspan fill="#7c6b4f">Atelier</tspan></text>
+  <text x="800" y="462" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#5f675f">Elegant fashion storefront for collections, stories, and product discovery.</text>
+  <rect x="655" y="522" width="290" height="62" rx="31" fill="#7c6b4f"/>
+  <text x="800" y="564" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" fill="#fff">Explore Collection</text>
+</svg>

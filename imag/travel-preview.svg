@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="SkyPulse travel preview">
+  <image href="Screenshot%202026-05-14%20162622.png" x="0" y="0" width="1600" height="900" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1600" height="900" fill="rgba(232,240,252,.66)"/>
+  <rect x="215" y="285" width="1170" height="330" rx="34" fill="rgba(255,255,255,.94)"/>
+  <text x="800" y="395" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="82" font-weight="800" fill="#102033">SkyPulse <tspan fill="#2563eb">Travel</tspan></text>
+  <text x="800" y="466" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="32" fill="#637083">Flight booking experience with routes, offers, and trip planning.</text>
+  <rect x="660" y="522" width="280" height="62" rx="31" fill="#2563eb"/>
+  <text x="800" y="564" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" fill="#fff">Plan a Trip</text>
+</svg>

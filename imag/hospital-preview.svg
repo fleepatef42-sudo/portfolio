@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="ShifaCare hospital preview">
+  <image href="Screenshot%202026-05-12%20225419.png" x="0" y="0" width="1600" height="900" preserveAspectRatio="xMidYMid slice"/>
+  <rect width="1600" height="900" fill="rgba(7,24,42,.40)"/>
+  <rect x="205" y="300" width="1190" height="318" rx="30" fill="rgba(255,255,255,.94)"/>
+  <text x="800" y="405" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="74" font-weight="800" fill="#112c46">ShifaCare <tspan fill="#1777c9">Hospital</tspan></text>
+  <text x="800" y="475" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="31" fill="#536b82">Operations dashboard for patients, teams, billing, and daily care.</text>
+  <rect x="625" y="530" width="350" height="62" rx="31" fill="#1777c9"/>
+  <text x="800" y="572" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="700" fill="#fff">Medical Command Center</text>
+</svg>
